@@ -25,6 +25,7 @@
     </script>
 
       <script id="recipe-template" type="text/x-handlebars-template">
+        <h1>{{name}}</h1>
         <a href="#" onclick="displayEditForm();">Edit Recipe</a>
         {{> recipeDetailsPartial }}
       </script>
@@ -41,7 +42,7 @@
       <script id="recipe-form-partial" type="text/x-handlebars-template">
         Name: <input type="text" id="recipeName" value={{name}}><br>
         Description: <input type="textarea" id="recipeDescription" value={{description}}><br>
-        <h4>Ingredients:</h4>
+        <h2>Ingredients:</h2>
         {#each ingredients}}
         <input type="text" name="ingredients" value={{this}}><br>
         {{else}}
