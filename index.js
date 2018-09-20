@@ -25,6 +25,7 @@ function createRecipe() {
   const ingredientsNodes = document.getElementsByName("ingredients");
   let ingredientsList = []
   for (let i = 0; i < ingredientsNodes.length; i++) {
+    debugger;
     if(ingredientsNodes[i].value !== "") {
     ingredientsList.push(ingredientsNodes[i].value)
   }
