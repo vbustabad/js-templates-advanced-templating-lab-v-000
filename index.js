@@ -20,7 +20,7 @@ function handlebarsRegistration() {
 }
 
 function createRecipe() {
-  const name = document.getElementById("recipeName").value;
+  const name = document.getElementById("name").value;
   const description = document.getElementById("recipeDescription").value;
   const ingredientsNodes = document.getElementsByName("ingredients");
   let ingredientsList = []
