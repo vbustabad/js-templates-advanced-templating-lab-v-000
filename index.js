@@ -32,7 +32,7 @@ function createRecipe() {
 
   const recipe = {'name': name, 'description': description, 'ingredients': ingredientsList};
 
-  const template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
+  const template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
   const result = template(recipe);
   document.getElementsByTagName("main")[0].innerHTML += result;
 }
