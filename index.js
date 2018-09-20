@@ -10,14 +10,14 @@ function init() {
 }
 
 function createRecipe() {
-  var recipe = {
-    name: document.getElementById("recipeName").value;
-    description: document.getElementById("recipeDescription").value;
-    ingredients: document.getElementById("recipeIngredients").value;
-  }
+  const name = document.getElementById("recipeName").value;
+  const description = document.getElementById("recipeDescription").value;
+  const ingredients = document.getElementById("recipeIngredients").value;
 
-  var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
-  var result = template(recipe);
+  const recipe = 
+
+  const template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
+  const result = template(recipe);
   document.getElementsByTagName("main")[0].innerHTML += result;
 }
 
@@ -26,7 +26,7 @@ function updateRecipe() {
 }
 
 function displayEditForm() {
-  var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
+  const template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
