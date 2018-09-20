@@ -5,6 +5,11 @@ function init() {
   handlebarsRegistration();
 }
 
+function createForm() {
+  const template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
+  document.getElementsByTagName("main")[0].innerHTML += template({'onSubmit': 'createRecipe()'});
+}
+
 function handlebarsRegistration() {
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML);
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML);
