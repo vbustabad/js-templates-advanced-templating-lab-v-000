@@ -2,7 +2,7 @@
 
 function init() {
   createForm();
-  handlebarsRegistration();
+  // handlebarsRegistration();
 }
 
 function createForm() {
