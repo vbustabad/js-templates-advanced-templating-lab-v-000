@@ -1,6 +1,11 @@
 //put any page initialization/handlebars initialization here
 
 function init() {
+  createForm();
+  handlebarsRegistration();
+}
+
+function handlebarsRegistration() {
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML);
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML);
 
