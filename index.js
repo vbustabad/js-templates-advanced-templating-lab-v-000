@@ -7,7 +7,7 @@ function init() {
 
 function createForm() {
   const template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
-  document.getElementsByTagName("main")[0].innerHTML += template({'onSubmit': 'createRecipe()'});
+  document.getElementsByTagName("main")[0].innerHTML += template({'submitAction': 'createRecipe()'});
 }
 
 function handlebarsRegistration() {
