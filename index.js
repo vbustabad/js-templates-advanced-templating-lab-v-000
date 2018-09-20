@@ -1,8 +1,8 @@
 //put any page initialization/handlebars initialization here
 
 function init() {
-  createForm();
   handlebarsRegistration();
+  createForm();
 }
 
 function createForm() {
