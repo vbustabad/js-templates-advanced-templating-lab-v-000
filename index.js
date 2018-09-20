@@ -20,10 +20,10 @@ function handlebarsRegistration() {
 }
 
 function createRecipe() {
-  // const name = document.getElementById("recipeName").value;
-  // const description = document.getElementById("recipeDescription").value;
-  // const ingredientsNodes = document.getElementsByName("ingredients");
-  // let ingredientsList = []
+  const name = document.getElementById("recipeName").value;
+  const description = document.getElementById("recipeDescription").value;
+  const ingredientsNodes = document.getElementsByName("ingredients");
+  let ingredientsList = []
   // for (let i = 0; i < ingredientsNodes.length; i++) {
   //   if(ingredientsNodes[i].value !== "") {
   //   ingredientsList.push(ingredientsNodes[i].value)
