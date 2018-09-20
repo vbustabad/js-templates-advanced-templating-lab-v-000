@@ -30,7 +30,7 @@ function createRecipe() {
     }
   }
 
-  const recipe = {'name': name, 'description': description, 'ingredients': ingredients};
+  const recipe = {'name': name, 'description': description, 'ingredients': ingredientsList};
 
   const template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
   const result = template(recipe);
