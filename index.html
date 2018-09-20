@@ -43,7 +43,7 @@
         Name: <input type="text" id="recipeName" value={{name}}><br>
         Description: <input type="textarea" id="recipeDescription" value={{description}}><br>
         <h2>Ingredients:</h2>
-        {#each ingredients}}
+        {{#each ingredients}}
         <input type="text" name="ingredients" value={{this}}><br>
         {{else}}
         <input name="ingredients" type="text"><br>
