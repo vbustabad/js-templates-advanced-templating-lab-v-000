@@ -19,22 +19,22 @@ function handlebarsRegistration() {
   })
 }
 
-// function createRecipe() {
-//   const name = document.getElementById("recipeName").value;
-//   const description = document.getElementById("recipeDescription").value;
-//   const ingredientsNodes = document.getElementsByName("ingredients");
-//   let ingredientsList = []
-//   for (let i = 0; i < ingredientsNodes.length; i++) {
-//     if(ingredientsNodes[i].value !== "") {
-//     ingredientsList.push(ingredientsNodes[i].value)
-//   }
-//
-//   const recipe = {'name': name, 'description': description, 'ingredients': ingredients}
-//
-//   const template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
-//   const result = template(recipe);
-//   document.getElementsByTagName("main")[0].innerHTML += result;
-// }
+function createRecipe() {
+  // const name = document.getElementById("recipeName").value;
+  // const description = document.getElementById("recipeDescription").value;
+  // const ingredientsNodes = document.getElementsByName("ingredients");
+  // let ingredientsList = []
+  // for (let i = 0; i < ingredientsNodes.length; i++) {
+  //   if(ingredientsNodes[i].value !== "") {
+  //   ingredientsList.push(ingredientsNodes[i].value)
+  // }
+
+  const recipe = {'name': name, 'description': description, 'ingredients': ingredients}
+
+  const template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
+  const result = template(recipe);
+  document.getElementsByTagName("main")[0].innerHTML += result;
+}
 
 function updateRecipe() {
   createRecipe();
